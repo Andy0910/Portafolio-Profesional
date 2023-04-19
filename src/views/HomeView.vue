@@ -28,12 +28,12 @@
           </v-col>
         </v-row>
       </div>
-      <v-col cols="12" class="mt16" id="about">
+      <v-col cols="12" class="mt-16" id="about">
         <div>
           <v-row>
             <v-col cols="12" sm="6">
               <div class="egg">
-                <v-img src="../assets/about.svg" max-height="200" contain></v-img>
+                <v-img src="../assets/about.svg" max-height="100" class="img-class"></v-img>
               </div>
             </v-col>
           </v-row>
@@ -95,14 +95,20 @@ export default defineComponent({
   background: rgb(var(--v-theme-prim));
   transform: skew(0deg,-6deg);
 }
-.egg{
+.egg {
   display: block;
+  position: relative;
   margin-left: 100px;
   margin-top: 50px;
   width: 356px;
   height: 300px;
-  background-color: rgba(var(--v-theme-sec),0.7);
-  border-radius: 50% 50% 50% 50% / 60% 60% 40% 0%;
+  background-color:rgba(var(--v-theme-sec),0.7);
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+.egg .img-class{
+  width: 85%;
+  padding: 300px 50px 0px 50px;
 }
 
 </style>
